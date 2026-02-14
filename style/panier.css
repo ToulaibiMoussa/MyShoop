@@ -1,0 +1,105 @@
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px var(--ombre);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cart-item-info {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.cart-item-qty {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-subtotal {
+    font-weight: bold;
+    width: 100px;
+    text-align: right;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.cart-summary {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.cart-summary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-clear, .btn-back {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-clear {
+    background: #ff4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn-back {
+    background: var(--Arriere-plan-base);
+    color: white;
+}
+
+.empty-msg {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #666;
+}

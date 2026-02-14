@@ -50,12 +50,16 @@ input[ type="search"] {
     height: 100%;
     padding: 5px 10px;
     border-radius: 5px;
+    outline: none;
     border: none;
 }
 
 input[ type="search"]::placeholder {
-
     font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+input[ type="search"]:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.495);
 }
 
 .search i {
@@ -263,4 +267,22 @@ section h2 {
         padding: 0 2rem;
     }
 
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--Arriere-plan-base);
+}
+
+.no-results i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.no-results p {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
