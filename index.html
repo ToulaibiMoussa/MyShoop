@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>MyShoop</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Images/Logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Rechercher un produit ...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="panier">
+                <i class="fas fa-shopping-cart"></i>
+                <div><span>1</span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside style="grid-area: aside;">
+            <h2>
+                <i class="fas fa-filter"></i>
+                Filtres
+            </h2>
+            <h3>Catégories</h3>
+            <div class="filtres">
+                <div>
+                    <input type="checkbox" name="Chaussures" id="Chaussures">
+                    <label for="Chaussures">Chaussures</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Hauts" id="Hauts">
+                    <label for="Hauts">Hauts</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Bas" id="Bas">
+                    <label for="Bas">Bas</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Accessoires" id="Accessoires">
+                    <label for="Accessoires">Accessoires</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Sacs" id="Sacs">
+                    <label for="Sacs">Sacs</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Chapeaux" id="Chapeaux">
+                    <label for="Chapeaux">Chapeaux</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Ensembles" id="Ensembles">
+                    <label for="Ensembles">Ensembles</label>
+                </div>
+            </div>
+            <div class="prix">
+                <p>
+                    <span>Prix: </span>
+                    0 - <span id="rangeValue">250$</span>
+                </p>
+                <input type="range" id="myRange" min="0" max="500" value="250" step="10">
+            </div>
+            <div class="ordre">
+                <h3>Trier par</h3>
+                <select name="order" id="orderSelect">
+                    <option value="default">Par défaut</option>
+                    <option value="priceAsc">Prix: du moins cher au plus cher</option>
+                    <option value="priceDesc">Prix: du plus cher au moins cher</option>
+                    <option value="nameAsc">Nom: A à Z</option>
+                    <option value="nameDesc">Nom: Z à A</option>
+                </select>
+            </div>
+            <div class="reintialiser">
+                <button id="resetFilters">
+                    <i class="fas fa-redo"></i>
+                    Réinitialiser les filtres
+                </button>
+            </div>
+        </aside>
+
+        <section style="grid-area: produit;">
+            <h2>Nos Produits</h2>
+            <div class="product-galleries" id="MesProduits">
+                <!-- Generate with JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const range = document.getElementById('myRange');
+        const valueDisplay = document.getElementById('rangeValue');
+
+        // Mettre à jour l'affichage de la valeur
+        range.addEventListener('input', function () {
+            valueDisplay.textContent = this.value + "$";
+        });
+    </script>
+    <script type="module" src="Script/main.js"></script>
+</body>
+
+</html>
