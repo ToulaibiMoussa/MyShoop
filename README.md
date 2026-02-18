@@ -2,17 +2,6 @@
 
 # MyShoop - Documentation
 
-## Table des matières
-
-1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Configuration](#configuration)
-4. [Utilisation](#utilisation)
-5. [Fonctionnalités](#fonctionnalités)
-6. [Structure du projet](#structure-du-projet)
-7. [Contribuer](#contribuer)
-8. [Licence](#licence)
-
 ## Introduction
 
 MyShoop est une application de gestion de boutique en ligne qui permet aux utilisateurs de gérer leurs produits, catégories, commandes et clients. Elle est conçue pour être simple d'utilisation et offre une interface intuitive pour les administrateurs de boutique.
