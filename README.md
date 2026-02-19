@@ -12,7 +12,7 @@ Pour installer MyShoop, suivez ces étapes :
 
 1. Clonez le dépôt GitHub :
    ```bash
-   git clone https://github.com/votre-utilisateur/MyShoop.git
+   git clone https://github.com/ToulaibiMoussa/MyShoop.git
    ```
 
 2. Accédez au répertoire du projet :
